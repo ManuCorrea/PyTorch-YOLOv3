@@ -1,0 +1,6 @@
+classes= 18
+train=/media/manu/Shared/data/coco/trainvalno5k.txt
+valid=/media/manu/Shared/data/coco/5k.txt
+names=gta.names
+backup=backup/
+eval=coco
