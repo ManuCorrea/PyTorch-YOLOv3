@@ -1,7 +1,9 @@
 # PyTorch-YOLOv3
 Minimal implementation of YOLOv3 in PyTorch.
 This repository is for work with https://github.com/ManuCorrea/SelfDriving-GTAV-Mod
+
 The objective is to experiment with pre-processed data with this net to feed a principal net which will be driving the car.
+
 Details will be explained soon...
 
 ## Table of Contents
