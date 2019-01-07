@@ -4,6 +4,9 @@ This repository is for work with https://github.com/ManuCorrea/SelfDriving-GTAV-
 
 The objective is to experiment with pre-processed data with this net to feed a principal net which will be driving the car.
 
+I made a dataset labeling objects in YOLO style.
+This is the folder with the images and a script for generating the list of images for training. https://drive.google.com/open?id=153tY__GkxWTztnrUnDbpNOrOJyj5HTJg
+
 Details will be explained soon...
 
 ## Table of Contents
