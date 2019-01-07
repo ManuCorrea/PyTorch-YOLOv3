@@ -1,12 +1,14 @@
 # PyTorch-YOLOv3
 Minimal implementation of YOLOv3 in PyTorch.
+This repository is for work with https://github.com/ManuCorrea/SelfDriving-GTAV-Mod
+The objective is to experiment with pre-processed data with this net to feed a principal net which will be driving the car.
+Details will be explained soon...
 
 ## Table of Contents
 - [PyTorch-YOLOv3](#pytorch-yolov3)
   * [Table of Contents](#table-of-contents)
   * [Paper](#paper)
   * [Installation](#installation)
-  * [Inference](#inference)
   * [Test](#test)
   * [Train](#train)
   * [Credit](#credit)
@@ -43,22 +45,6 @@ https://pjreddie.com/yolo/.
     $ cd data/
     $ bash get_coco_dataset.sh
 
-## Inference
-Uses pretrained weights to make predictions on images. Below table displays the inference times when using as inputs images scaled to 256x256. The ResNet backbone measurements are taken from the YOLOv3 paper. The Darknet-53 measurement marked shows the inference time of this implementation on my 1080ti card.
-
-| Backbone                | GPU      | FPS      |
-| ----------------------- |:--------:|:--------:|
-| ResNet-101              | Titan X  | 53       |
-| ResNet-152              | Titan X  | 37       |
-| Darknet-53 (paper)      | Titan X  | 76       |
-| Darknet-53 (this impl.) | 1080ti   | 74       |
-
-    $ python3 detect.py --image_folder /data/samples
-
-<p align="center"><img src="assets/giraffe.png" width="480"\></p>
-<p align="center"><img src="assets/dog.png" width="480"\></p>
-<p align="center"><img src="assets/traffic.png" width="480"\></p>
-<p align="center"><img src="assets/messi.png" width="480"\></p>
 
 ## Test
 Evaluates the model on COCO test.
